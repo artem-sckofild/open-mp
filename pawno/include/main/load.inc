@@ -8,16 +8,14 @@ main()
 
 public OnGameModeInit()
 {
-	new day, month, year;
-	getdate(day, month, year);
-	
-	f(global, 64, "Build: %d.%d.%d", day, month, year);
-	SetGameModeText(global);
+	setBuildDate();
+	setConnectInBD();
 
 	return 1;
 }
 
 public OnGameModeExit()
 {
+	mysql_close(mysql);
 	return 1;
 }

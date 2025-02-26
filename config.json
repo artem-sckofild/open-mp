@@ -51,7 +51,7 @@
     },
     "language": "Arizona-rp Russian",
     "logging": {
-        "enable": false,
+        "enable": true,
         "file": "log.txt",
         "log_chat": true,
         "log_connection_messages": true,
@@ -95,7 +95,9 @@
     },
     "password": "",
     "pawn": {
-        "legacy_plugins": [],
+        "legacy_plugins": [
+            "mysql.so"
+        ],
         "main_scripts": [
             "arp"
         ],
